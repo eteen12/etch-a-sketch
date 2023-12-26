@@ -1,7 +1,7 @@
 let color = "black";
 
 document.addEventListener("DOMContentLoaded",function(){
-    createBoard("16");
+    createBoard(16);
   
     let btn_popup=document.querySelector("#popup");
     btn_popup.addEventListener('click',function(){
@@ -19,11 +19,11 @@ function createBoard(size){
     let numDivs=size*size;
 
     for(let i=0;i<numDivs;i++){
-        let div=document.createElement('div');
+        let div=document.createElement("div");
 
-        div.addEventListener('mouseover', colorDiv);
+        div.addEventListener("mouseover", colorDiv);
 
-        board.insertAdjacentElement("beforeend",div);
+        board.insertAdjacentElement("beforeend", div);
     }
 }
 
@@ -52,5 +52,5 @@ else{
 }
 
 function setColor(colorChoice){
-    color=colorChoice;
+    color = colorChoice;
 }
